@@ -1,0 +1,40 @@
+:root {
+    /* Основные параметры персонажа */
+    --character-top: 10%;
+    --character-left: 55%;
+    --character-width: 45%;
+    --character-height: 90%;
+    
+    /* Z-index для слоев */
+    --z-index-base: 0;    
+    --z-index-mouth: 2;    
+    --z-index-hair: 10;      
+}
+
+.zmei {
+    position: absolute;
+    top: var(--character-top);
+    left: var(--character-left);
+    width: var(--character-width);
+    height: var(--character-height);
+    z-index: var(--z-index-base);
+}
+
+.expression {
+    position: absolute;
+    top: var(--character-top);
+    left: var(--character-left);
+    width: var(--character-width);
+    height: var(--character-height);
+    z-index: var(--z-index-mouth);
+    opacity: 0;
+}
+
+.hair {
+    position: absolute;
+    top: var(--character-top);
+    left: var(--character-left);
+    width: var(--character-width);
+    height: var(--character-height);
+    z-index: var(--z-index-hair);
+}
