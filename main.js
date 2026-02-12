@@ -40,7 +40,7 @@ function movefood() {
         if (foodRight > closer) {
             openMounth.style.opacity = "1";
         }
-        food.style.left = (currentLeft + 5) + "px";
+        food.style.left = currentLeft + (window.innerWidth * 0.08) + "px";
     } else {
         setTimeout(function() {
         onfoodCome();
